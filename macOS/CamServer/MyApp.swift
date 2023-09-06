@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct MyApp: App {
-    @StateObject var server = Server.shared
+    @NSApplicationDelegateAdaptor var delegate: AppDelegate
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(server)
+                .environmentObject(Server.shared)
         }
     }
 }
