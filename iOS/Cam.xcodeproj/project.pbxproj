@@ -14,6 +14,7 @@
 		2DC08CF52AA8A43D0006BDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC08CF42AA8A43D0006BDFD /* AppDelegate.swift */; };
 		2DC08CF72AA8A63C0006BDFD /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC08CF62AA8A63C0006BDFD /* Client.swift */; };
 		2DC08CF92AA8AC360006BDFD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC08CF82AA8AC360006BDFD /* ImagePicker.swift */; };
+		2DC08CFB2AA8B3AC0006BDFD /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC08CFA2AA8B3AC0006BDFD /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2DC08CF42AA8A43D0006BDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DC08CF62AA8A63C0006BDFD /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		2DC08CF82AA8AC360006BDFD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2DC08CFA2AA8B3AC0006BDFD /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2DC08CF42AA8A43D0006BDFD /* AppDelegate.swift */,
 				2DC08CF62AA8A63C0006BDFD /* Client.swift */,
 				2DC08CF82AA8AC360006BDFD /* ImagePicker.swift */,
+				2DC08CFA2AA8B3AC0006BDFD /* View+Extension.swift */,
 			);
 			path = Cam;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				2DC08CE82AA8A3880006BDFD /* ContentView.swift in Sources */,
 				2DC08CF92AA8AC360006BDFD /* ImagePicker.swift in Sources */,
 				2DC08CF72AA8A63C0006BDFD /* Client.swift in Sources */,
+				2DC08CFB2AA8B3AC0006BDFD /* View+Extension.swift in Sources */,
 				2DC08CE62AA8A3880006BDFD /* CamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

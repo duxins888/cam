@@ -67,6 +67,7 @@ struct ContentView: View {
         if client.isConnecting {
             Button(role: .destructive) {
                 client.cancel()
+                UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
             } label: {
                 HStack(spacing: 10) {
                     ProgressView()
@@ -78,6 +79,8 @@ struct ContentView: View {
         } else {
             Button {
                 client.connect(host, port)
+                hideKeyboard()
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
             } label: {
                 Text("接続")
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -92,6 +95,7 @@ struct ContentView: View {
     private func cameraButton() -> some View {
         Button {
             showPicker = true
+            UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
         } label: {
             Image(systemName: "camera")
                 .font(.system(size: 40, weight: .medium))
