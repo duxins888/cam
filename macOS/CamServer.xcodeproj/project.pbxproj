@@ -11,6 +11,8 @@
 		2D0637382AA88FAA005B76C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0637372AA88FAA005B76C7 /* ContentView.swift */; };
 		2D06373A2AA88FAB005B76C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0637392AA88FAB005B76C7 /* Assets.xcassets */; };
 		2D06373D2AA88FAB005B76C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D06373C2AA88FAB005B76C7 /* Preview Assets.xcassets */; };
+		2D0637462AA891B2005B76C7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0637452AA891B2005B76C7 /* Server.swift */; };
+		2DC08CD62AA89AE90006BDFD /* NSImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC08CD52AA89AE90006BDFD /* NSImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		2D0637392AA88FAB005B76C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D06373C2AA88FAB005B76C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D06373E2AA88FAB005B76C7 /* CamServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CamServer.entitlements; sourceTree = "<group>"; };
+		2D0637452AA891B2005B76C7 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		2DC08CD52AA89AE90006BDFD /* NSImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				2D0637442AA8905E005B76C7 /* Resources */,
 				2D0637352AA88FAA005B76C7 /* MyApp.swift */,
 				2D0637372AA88FAA005B76C7 /* ContentView.swift */,
+				2D0637452AA891B2005B76C7 /* Server.swift */,
+				2DC08CD52AA89AE90006BDFD /* NSImage+Extension.swift */,
 			);
 			path = CamServer;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0637382AA88FAA005B76C7 /* ContentView.swift in Sources */,
+				2D0637462AA891B2005B76C7 /* Server.swift in Sources */,
+				2DC08CD62AA89AE90006BDFD /* NSImage+Extension.swift in Sources */,
 				2D0637362AA88FAA005B76C7 /* MyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

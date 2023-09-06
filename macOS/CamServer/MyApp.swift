@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MyApp: App {
+    @StateObject var server = Server.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(server)
         }
     }
 }
