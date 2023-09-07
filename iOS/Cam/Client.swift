@@ -27,6 +27,8 @@ class Client: ObservableObject {
     
     @Published var isConncted = false
     
+    @Published var msg = ""
+    
     // MARK: - Errors
     /// 错误消息
     @Published var lastError: String = "" {
@@ -96,6 +98,9 @@ class Client: ObservableObject {
                     return
                 }
                 print("Done.")
+                DispatchQueue.main.async {
+                    self.msg = "送信しました（\(data.count / 1024)KB）"
+                }
             })
         })
     }

@@ -93,16 +93,27 @@ struct ContentView: View {
     }
     
     private func cameraButton() -> some View {
-        Button {
-            showPicker = true
-            UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
-        } label: {
-            Image(systemName: "camera")
-                .font(.system(size: 40, weight: .medium))
-                .foregroundColor(.white)
-                .padding(30)
-                .background(Color("CameraBtn"))
-                .clipShape(Circle())
+        ZStack {
+            Button {
+                client.msg = ""
+                showPicker = true
+                UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+            } label: {
+                Image(systemName: "camera")
+                    .font(.system(size: 40, weight: .medium))
+                    .foregroundColor(.white)
+                    .padding(30)
+                    .background(Color("CameraBtn"))
+                    .clipShape(Circle())
+            }
+            
+            VStack {
+                Spacer()
+                Text(client.msg)
+                    .foregroundColor(.secondary)
+            }
+            .padding(.bottom, 40)
+            
         }
         .fullScreenCover(isPresented: $showPicker) {
             ImagePicker(image: $image)
